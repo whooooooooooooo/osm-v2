@@ -1,0 +1,365 @@
+{
+  "not-found": {
+    "title": "Página não encontrada",
+    "description": "A página que procura não existe",
+    "back": "Voltar à página inicial"
+  },
+  "navbar": {
+    "app": "Monitor de derrames de óleo",
+    "options": {
+      "theme": {
+        "tooltip": "Mudar o tema",
+        "light": "Claro",
+        "dark": "Escuro",
+        "system": "Sistema"
+      },
+      "locale": {
+        "tooltip": "Mudar idioma",
+        "en": "Inglês",
+        "pt": "Português"
+      },
+      "settings": {
+        "tooltip": "Definições",
+        "data": {
+          "title": "Representação de dados",
+            "options": {
+            "smudge": {
+              "title": "Manchas",
+              "description": "Visualize os dados usando a representação de manchas baseada na densidade do fluido"
+            },
+            "convex": {
+              "title": "Casco convexo",
+              "description": "Visualize os dados usando cascos convexos que representam a área afetada"
+            },
+            "points": {
+              "title": "Pontos",
+              "description": "Visualize os dados usando pontos que representam os locais de recolha de dados"
+            }
+            }
+        },
+        "textures": {
+          "title": "Qualidade das texturas",
+          "options": {
+            "low": "Baixa",
+            "mid": "Média",
+            "high": "Alta"
+          }
+        },
+        "time": {
+          "title": "Ciclo de dia e noite",
+          "options": {
+            "on": "Ligado",
+            "off": "Desligado"
+          }
+        },
+        "labels": {
+          "title": "Legendas",
+          "options": {
+            "on": "Ligado",
+            "off": "Desligado"
+          }
+        }
+      },
+      "helper": {
+        "tooltip": "Ajuda",
+        "options": {
+          "default": {
+            "title": "Introdução geral",
+            "steps": {
+              "default": "Inicie a visita guiada para aprender a usar o monitor de derrames de óleo",
+              "globe": "Explore o globo para ver os derrames de óleo em todo o mundo",
+              "timeline": "Use a linha do tempo para controlar o tempo e ver como os derrames de óleo evoluem",
+              "data": "Explore os dados para ver as estatísticas dos derrames de óleo",
+              "more": "Para mais ajuda, clique no botão de ajuda e selecione a opção de visita guiada"
+            }
+          },
+          "globe": {
+            "title": "Explorar o globo",
+            "steps": {
+              "default": "Explore o globo para analisar os derrames de óleo",
+              "controls": "Use os controlos para aproximar, afastar, maximizar e minimizar o ecrã, localizar a sua localização atual e tirar uma captura de ecrã",
+              "settings": "Ajuste as definições para personalizar a visualização dos derrames de óleo"
+            }
+          },
+          "timeline": {
+            "title": "Navegação na linha do tempo",
+            "steps": {
+              "default": "Use a linha do tempo para controlar o tempo e ver como os derrames de óleo evoluem",
+              "controls": "Use os controlos para voltar, reproduzir, pausar e avançar no tempo, ajustar a velocidade de reprodução e selecionar um intervalo de tempo",
+              "moment": "Selecione um momento específico para ver os derrames de óleo nesse momento"
+            }
+          },
+          "data": {
+            "title": "Visualizar os dados",
+            "steps": {
+              "default": "Explore os dados para ver as estatísticas dos derrames de óleo",
+              "table": "Veja os dados dos derrames de óleo em formato de tabela, com a possibilidade de ordenar e filtrar",
+              "filters": "Use os filtros para pesquisar e filtrar os derrames de óleo com base em critérios como área, duração e frequência",
+              "add": "Adicione novos derrames de óleo na base de dados",
+              "metrics": "Veja as métricas dos derrames de óleo, como número de momentos, duração, frequência e localização",
+              "stats": "Veja as estatísticas dos derrames de óleo, como área, duração, frequência, pontos, entre outros",
+              "select": "Selecione um derrame de óleo específico para ver os detalhes e as estatísticas desse derrame",
+              "raw": "Veja os dados brutos do derrame de óleo fornecidos",
+                "oceanViewer": "O visualizador de oceano está em desenvolvimento, mas permitirá visualizar os derrames de óleo num ambiente tridimensional"
+            }
+          }
+        },
+        "back": "Voltar",
+        "close": "Fechar",
+        "last": "Terminar",
+        "next": "Próximo",
+        "nextProgress": "Próximo ({step} em {steps})",
+        "skip": "Saltar"
+      }
+    }
+  },
+  "globe": {
+    "controls": {
+      "zoomIn": {
+        "tooltip": "Aproximar"
+      },
+      "zoomOut": {
+        "tooltip": "Afastar"
+      },
+      "maximize": {
+        "tooltip": "Maximizar o ecrã"
+      },
+      "minimize": {
+        "tooltip": "Minimizar o ecrã"
+      },
+      "location": {
+        "tooltip": "Localização atual do derrame de óleo"
+      },
+      "manualExit": "Pressione ESC para sair do modo de ecrã cheio"
+    },
+    "timeline": {
+      "skipBack": {
+        "tooltip": "Voltar"
+      },
+      "play": {
+        "tooltip": "Reproduzir"
+      },
+      "pause": {
+        "tooltip": "Pausar"
+      },
+      "skipForward": {
+        "tooltip": "Avançar"
+      },
+      "speed": {
+        "tooltip": "Velocidade de reprodução",
+        "options": {
+          "0_5": "0.5x",
+          "1": "1x",
+          "2": "2x"
+        }
+      },
+      "calendar": {
+        "tooltip": "Intervalo de tempo"
+      }
+    },
+    "search": {
+      "placeholder": "Procurar por uma localização",
+      "noStats": "São necessários vários derrames de óleo para comparar estatísticas",
+      "noResults": "Nenhum resultado encontrado",
+      "filters": {
+        "label": "Filtros",
+        "tooltip": "Filtrar localizações",
+        "options": {
+          "min": "Mín",
+          "max": "Máx",
+          "areaRange": {
+            "label": "Intervalo de área (km<sup>2</sup>)"
+          },
+          "durationRange": {
+            "label": "Intervalo de duração (minutos)"
+          },
+          "frequencyRange": {
+            "label": "Intervalo de frequência (minutos)"
+          },
+          "columns": {
+            "label": "Visibilidade das colunas",
+            "placeholder": "Selecionar colunas"
+          }
+        }
+      },
+      "add": {
+        "tooltip": "Adicionar derrame de óleo",
+        "dialog": {
+          "title": "Adicionar derrame de óleo",
+          "description": "Adicione um novo derrame de óleo ao monitor",
+          "file": "Clique para procurar ou arraste e largue um ficheiro JSON com dados do derrame de óleo",
+          "actions": {
+            "add": "Adicionar",
+            "adding": "A adicionar...",
+            "cancel": "Cancelar",
+            "remove": "Remover",
+            "retry": "Tentar novamente"
+          },
+          "steps": {
+            "proceed": "Clique em adicionar para prosseguir com a validação deste ficheiro JSON",
+            "timestamps": "A validar se existem registos de tempo",
+            "actors": "A validar se cada registo de tempo tem um ator",
+            "dates": "A validar se todas as datas são diferentes",
+            "geometry": "A validar se os dados de geometria são válidos",
+            "success": "Derrame de óleo adicionado com sucesso",
+            "error": "Erro ao adicionar o derrame de óleo"
+          }
+        }
+      },
+      "reset": {
+        "tooltip": "Repor filtros"
+      }
+    },
+    "table": {
+      "header": {
+        "id": "ID",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "area": "Área",
+        "areaKm2": "Área (km<sup>2</sup>)",
+        "points": "Pontos",
+        "duration": "Duração",
+        "frequency": "Frequência"
+      },
+      "body": {
+        "noData": "Não há dados para mostrar"
+      }
+    },
+    "stats": {
+      "radar": {
+        "n": "N",
+        "s": "S",
+        "e": "E",
+        "w": "O"
+      },
+      "area": {
+        "label": "Área",
+        "detail": "km<sup>2</sup>",
+        "tooltip": {
+          "info": "Área do derrame de óleo",
+          "min": "Área mínima - {min} km<sup>2</sup>",
+          "avg": "Área média - {avg} km<sup>2</sup>",
+          "max": "Área máxima - {max} km<sup>2</sup>"
+        }
+      },
+      "duration": {
+        "label": "Duração",
+        "detail": "por derrame de óleo",
+        "tooltip": {
+          "info": "Duração do derrame de óleo",
+          "min": "Duração mínima - {min}",
+          "avg": "Duração média - {avg}",
+          "max": "Duração máxima - {max}"
+        }
+      },
+      "frequency": {
+        "label": "Frequência de dados",
+        "detail": "por minuto",
+        "tooltip": {
+          "info": "Frequência de recolha de dados",
+          "min": "Frequência mínima de dados - {min}",
+          "avg": "Frequência média de dados - {avg}",
+          "max": "Frequência máxima de dados - {max}"
+        }
+      },
+      "points": {
+        "label": "Pontos",
+        "detail": "por derrame de óleo",
+        "tooltip": {
+          "info": "Número de pontos por intervalo de tempo",
+          "avg": "Média de pontos - {avg}"
+        }
+      },
+      "density": {
+        "label": "Densidade",
+        "detail": "pontos por km<sup>2</sup>",
+        "tooltip": {
+          "info": "Densidade de pontos na área afetada",
+          "avg": "Densidade média - {avg} pontos por km<sup>2</sup>"
+        }
+      },
+      "perimeter": {
+        "label": "Perímetro",
+        "detail": "km",
+        "tooltip": {
+          "info": "Perímetro da área afetada (convex hull)",
+          "min": "Perímetro mínimo - {min} km",
+          "avg": "Perímetro médio - {avg} km",
+          "max": "Perímetro máximo - {max} km"
+        }
+      },
+      "compaction": {
+        "label": "Circularidade",
+        "detail": "percentagem",
+        "tooltip": {
+          "info": "Circularidade do derrame de óleo",
+          "avg": "Circularidade média - {avg}%"
+        }
+      },
+      "dispersionRadius": {
+        "label": "Raio de dispersão",
+        "detail": "km",
+        "tooltip": {
+          "info": "Distância entre os pontos e o centro do derrame de óleo",
+          "min": "Raio de dispersão mínimo - {min} km",
+          "avg": "Raio de dispersão médio - {avg} km",
+          "max": "Raio de dispersão máximo - {max} km"
+        }
+      },
+      "dispersionDistance": {
+        "label": "Distância de dispersão",
+        "detail": "km",
+        "tooltip": {
+          "info": "Distância entre os pontos e a localização do ator",
+          "min": "Distância de dispersão mínima - {min} km",
+          "avg": "Distância de dispersão média - {avg} km",
+          "max": "Distância de dispersão máxima - {max} km"
+        }
+      },
+      "bearing": {
+        "label": "Direção",
+        "detail": "graus",
+        "tooltip": {
+          "info": "Direção do derrame de petróleo",
+          "avg": "Mediana da direção - {avg}º"
+        }
+      },
+      "noData": "Sem dados"
+    }
+  },
+  "pagination": {
+    "itemsPerPage": "{items} itens por página",
+    "itemsOutOf": "{items} itens em {total}",
+    "pageOf": "Página {page} de {total}",
+    "goToFirst": "Ir para a primeira página",
+    "goToPrevious": "Ir para a página anterior",
+    "goToNext": "Ir para a próxima página",
+    "goToLast": "Ir para a última página"
+  },
+  "details": {
+    "return": "Todos os derrames de óleo",
+    "title": "Detalhes do derrame de óleo",
+    "copy": {
+      "tooltip": "Copiar o url do derrame de óleo"
+    },
+    "timestampsCollected": {
+      "tooltip": "Número de registos recolhidos"
+    },
+    "duration": {
+      "tooltip": "Duração do derrame de óleo"
+    },
+    "frequency": {
+      "tooltip": "Frequência dos registos"
+    },
+    "location": {
+      "tooltip": "Localização do derrame de óleo"
+    },
+    "copyData": {
+      "label": "Copiar",
+      "tooltip": "Copiar dados"
+    },
+    "oceanViewer": {
+      "wip": "Visualizador de oceano em desenvolvimento"
+    }
+  }
+}

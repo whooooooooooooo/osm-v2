@@ -1,0 +1,366 @@
+{
+  "not-found": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist",
+    "back": "Go back to the homepage"
+  },
+  "navbar": {
+    "app": "Oil Spill Monitor",
+    "options": {
+      "theme": {
+        "tooltip": "Change theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      },
+      "locale": {
+        "tooltip": "Change language",
+        "en": "English",
+        "pt": "Portuguese"
+      },
+      "settings": {
+        "tooltip": "Settings",
+        "data": {
+          "title": "Data representation",
+          "options": {
+            "smudge": {
+              "title": "Smudge",
+              "description": "Visualize data using smudge representation based on fluid density"
+            },
+            "convex": {
+              "title": "Convex hulls",
+              "description": "Visualize data using convex hulls representing the affected area"
+            },
+            "points": {
+              "title": "Points",
+              "description": "Visualize data using points representing data collection locations"
+            }
+          }
+        },
+        "textures": {
+          "title": "Textures quality",
+          "options": {
+            "low": "Low",
+            "mid": "Medium",
+            "high": "High"
+          }
+        },
+        "time": {
+          "title": "Day night cycle",
+          "options": {
+            "on": "On",
+            "off": "Off"
+          }
+        },
+        "labels": {
+          "title": "Labels",
+          "options": {
+            "on": "On",
+            "off": "Off"
+          }
+        }
+      },
+      "helper": {
+        "tooltip": "Help",
+        "options": {
+          "default": {
+            "title": "General introduction",
+            "steps": {
+              "default": "Start the guided tour to learn how to use the oil spill monitor",
+              "globe": "Explore the globe to see oil spills around the world",
+              "timeline": "Use the timeline to control time and see how oil spills evolve",
+              "data": "Explore the data to see oil spill statistics",
+              "more": "For more help, click the help button and select an option"
+            }
+          },
+          "globe": {
+            "title": "Globe exploration",
+            "steps": {
+              "default": "Explore the globe to analyze oil spills",
+              "controls": "Use the controls to zoom in, zoom out, maximize and minimize the screen, locate your current location, and take a screenshot",
+              "settings": "Adjust the settings to customize the oil spill visualization"
+            }
+          },
+          "timeline": {
+            "title": "Timeline navigation",
+            "steps": {
+              "default": "Use the timeline to control time and see how oil spills evolve",
+              "controls": "Use the controls to go back, play, pause, and go forward in time, adjust playback speed, and select a time range",
+              "moment": "Select a specific moment to see oil spills at that time"
+            }
+          },
+          "data": {
+            "title": "Data visualization",
+            "steps": {
+              "default": "Explore the data to see oil spill statistics",
+              "table": "View oil spill data in a table format, with the ability to sort and filter",
+              "filters": "Use filters to search and filter oil spills based on criteria such as area, duration, and frequency",
+              "add": "Add new oil spills to the monitor",
+              "metrics": "View oil spill metrics such as number of moments, duration, frequency, and location",
+              "stats": "View oil spill statistics such as area, duration, frequency, points, and more",
+              "select": "Select a specific oil spill to see its details and statistics",
+              "raw": "View the raw data provided for the oil spill",
+              "oceanViewer": "Ocean viewer is under development, but will allow you to visualize oil spills in a three-dimensional environment"
+            }
+          }
+        },
+        "back": "Back",
+        "close": "Close",
+        "last": "Finish",
+        "next": "Next",
+        "nextProgress": "Next ({step} in {steps})",
+        "skip": "Skip"
+      }
+    }
+  },
+  "globe": {
+    "controls": {
+      "zoomIn": {
+        "tooltip": "Zoom in"
+      },
+      "zoomOut": {
+        "tooltip": "Zoom out"
+      },
+      "maximize": {
+        "tooltip": "Maximize screen"
+      },
+      "minimize": {
+        "tooltip": "Minimize screen"
+      },
+      "location": {
+        "tooltip": "Current oil spill location"
+      },
+      "manualExit": "Press ESC to exit fullscreen"
+    },
+    "timeline": {
+      "skipBack": {
+        "tooltip": "Back"
+      },
+      "play": {
+        "tooltip": "Play"
+      },
+      "pause": {
+        "tooltip": "Pause"
+      },
+      "skipForward": {
+        "tooltip": "Forward"
+      },
+      "speed": {
+        "tooltip": "Playback speed",
+        "options": {
+          "0_5": "0.5x",
+          "1": "1x",
+          "2": "2x"
+        }
+      },
+      "calendar": {
+        "tooltip": "Select date range"
+      }
+    },
+    "search": {
+      "placeholder": "Search for a location",
+      "noStats": "Multiple oil spills are required to compare statistics",
+      "noResults": "No results found",
+      "filters": {
+        "label": "Filters",
+        "tooltip": "Filter locations",
+        "options": {
+          "min": "Min",
+          "max": "Max",
+          "areaRange": {
+            "label": "Area range (km<sup>2</sup>)"
+          },
+          "durationRange": {
+            "label": "Duration range (minutes)"
+            
+          },
+          "frequencyRange": {
+            "label": "Frequency range (minutes)"
+          },
+          "columns": {
+            "label": "Columns visibility",
+            "placeholder": "Select columns"
+          }
+        }
+      },
+      "add": {
+        "tooltip": "Add oil spill",
+        "dialog": {
+          "title": "Add oil spill",
+          "description": "Add a new oil spill to the monitor",
+          "file": "Click to browse or drag and drop a JSON file with oil spill data",
+          "actions": {
+            "add": "Add",
+            "adding": "Adding...",
+            "cancel": "Cancel",
+            "remove": "Remove",
+            "retry": "Retry"
+          },
+          "steps": {
+            "proceed": "Click add to proceed with the validation of this JSON file",
+            "timestamps": "Validating if timestamps exist",
+            "actors": "Validating if each timestamp has an actor",
+            "dates": "Validating if dates are all different",
+            "geometry": "Validating if geometry data is valid",
+            "success": "Oil spill added successfully",
+            "error": "Error adding oil spill"
+          }
+        }
+      },
+      "reset": {
+        "tooltip": "Reset filters"
+      }
+    },
+    "table": {
+      "header": {
+        "id": "ID",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "area": "Area",
+        "areaKm2": "Area (km<sup>2</sup>)",
+        "points": "Points",
+        "duration": "Duration",
+        "frequency": "Frequency"
+      },
+      "body": {
+        "noData": "There's no data to show"
+      }
+    },
+    "stats": {
+      "radar": {
+        "n": "N",
+        "s": "S",
+        "e": "E",
+        "w": "W"
+      },
+      "area": {
+        "label": "Area",
+        "detail": "km<sup>2</sup>",
+        "tooltip": {
+          "info": "Area of the oil spill",
+          "min": "Minimum area - {min} km<sup>2</sup>",
+          "avg": "Average area - {avg} km<sup>2</sup>",
+          "max": "Maximum area - {max} km<sup>2</sup>"
+        }
+      },
+      "duration": {
+        "label": "Duration",
+        "detail": "per oil spill",
+        "tooltip": {
+          "info": "Duration of the oil spill",
+          "min": "Minimum duration - {min}",
+          "avg": "Average duration - {avg}",
+          "max": "Maximum duration - {max}"
+        }
+      },
+      "frequency": {
+        "label": "Data frequency",
+        "detail": "per minutes",
+        "tooltip": {
+          "info": "Frequency of data collection",
+          "min": "Minimum data frequency - {min}",
+          "avg": "Average data frequency - {avg}",
+          "max": "Maximum data frequency - {max}"
+        }
+      },
+      "points": {
+        "label": "Points",
+        "detail": "per oil spill",
+        "tooltip": {
+          "info": "Number of points per time interval",
+          "avg": "Average points - {avg}"
+        }
+      },
+      "density": {
+        "label": "Density",
+        "detail": "points per km<sup>2</sup>",
+        "tooltip": {
+          "info": "Density of points in the affected area",
+          "avg": "Average density - {avg} points per km<sup>2</sup>"
+        }
+      },
+      "perimeter": {
+        "label": "Perimeter",
+        "detail": "km",
+        "tooltip": {
+          "info": "Perimeter of the affected area (convex hull)",
+          "min": "Minimum perimeter - {min} km",
+          "avg": "Average perimeter - {avg} km",
+          "max": "Maximum perimeter - {max} km"
+        }
+      },
+      "compaction": {
+        "label": "Circularity",
+        "detail": "percentage",
+        "tooltip": {
+          "info": "Circularity of the oil spill",
+          "avg": "Average circularity - {avg}%"
+        }
+      },
+      "dispersionRadius": {
+        "label": "Dispersion radius",
+        "detail": "km",
+        "tooltip": {
+          "info": "Distance between points and the center of the oil spill",
+          "min": "Minimum dispersion radius - {min} km",
+          "avg": "Average dispersion radius - {avg} km",
+          "max": "Maximum dispersion radius - {max} km"
+        }
+      },
+      "dispersionDistance": {
+        "label": "Dispersion distance",
+        "detail": "km",
+        "tooltip": {
+          "info": "Distance between points and the actor location",
+          "min": "Minimum dispersion distance - {min} km",
+          "avg": "Average dispersion distance - {avg} km",
+          "max": "Maximum dispersion distance - {max} km"
+        }
+      },
+      "bearing": {
+        "label": "Bearing",
+        "detail": "degrees",
+        "tooltip": {
+          "info": "Bearing of the oil spill",
+          "avg": "Median bearing - {avg}º"
+        }
+      },
+      "noData": "No data"
+    }
+  },
+  "pagination": {
+    "itemsPerPage": "{items} items per page",
+    "itemsOutOf": "{items} items out of {total}",
+    "pageOf": "Page {page} of {total}",
+    "goToFirst": "Go to the first page",
+    "goToPrevious": "Go to the previous page",
+    "goToNext": "Go to the next page",
+    "goToLast": "Go to the last page"
+  },
+  "details": {
+    "return": "All oil spills",
+    "title": "Oil spill details",
+    "copy": {
+      "tooltip": "Copy the oil spill URL"
+    },
+    "timestampsCollected": {
+      "tooltip": "Number of timestamps collected"
+    },
+    "duration": {
+      "tooltip": "Duration of the oil spill"
+    },
+    "frequency": {
+      "tooltip": "Frequency of timestamps"
+    },
+    "location": {
+      "tooltip": "Location of the oil spill"
+    },
+    "copyData": {
+      "label": "Copy",
+      "tooltip": "Copy raw data"
+    },
+    "oceanViewer": {
+      "wip": "Ocean viewer is under development"
+    }
+  }
+}
